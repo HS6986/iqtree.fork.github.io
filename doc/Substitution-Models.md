@@ -386,7 +386,7 @@ The binary alignments should contain state `0` and `1`, whereas for morphologica
 
 Except for `GTR2` that has unequal state frequencies, all other models have equal state frequencies. Users can change how state frequencies are modeled in morphological models by appending `+FQ`, `+F`, `+F{...}`, or `+FO`.
 
-> **WARNING**: Models with unequal rates and/or frequencies (e.g., `GTR2+FO`, `MK+FO`, `GTRX+FQ`, `GTRX+FO`) should generally not be applied to morphological data as their state labels are typically fundamentally arbitrary. For morphological data, it is common practice to apply the `MK+FQ+ASC` model (or `ORDERED+FQ+ASC` for ordered [additive] characters) (see below for `+ASC`) with or without rate heterogeneity across characters parameters.
+> **WARNING**: Models with unequal rates and/or frequencies (e.g., `GTR2+FO`, `MK+FO`, `GTRX+FQ`, `GTRX+FO`) should generally not be applied to morphological data as their state labels are typically fundamentally arbitrary. For morphological data, it is common practice to apply the `MK+FQ+ASC` model (or `ORDERED+FQ+ASC` for ordered [additive] characters) (see below for `+ASC`) with or without rate heterogeneity across characters parameters (e.g., `+G`, `+R`).
 
 > **WARNING**: If you use `GTRX` for your multistate data, because of its sometimes very great number of free parameters, please make sure your data are sufficiently large and always test for model fit.
 
